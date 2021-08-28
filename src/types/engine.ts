@@ -22,4 +22,4 @@ export const ALI: Engine = {
 	url: 'https://search.balls.workers.dev/?q=',
 };
 
-export const ENGINES = [DUCK, GOOGLE] as const;
+export const ENGINES = [DUCK, GOOGLE, ALI] as const;
