@@ -4,8 +4,8 @@ import {Search} from '../components/search';
 import {useEffect, useState} from 'react';
 import fetch from 'node-fetch';
 import {ENGINES, GOOGLE} from '../types/engine';
-import {Bookmark} from '../types/bookmarks';
-import Link from 'next/link';
+import {Bookmark} from '../components/bookmark';
+import {Bookmark as BookmarkType} from '../types/bookmarks';
 
 export default function Home() {
 	const router = useRouter();
@@ -18,7 +18,7 @@ export default function Home() {
 	} = router.query as Record<string, string | undefined>;
 
 	const engine = ENGINES.find(engine => match(engine.name, engineName ?? 'google'));
-	const [bookmarks, setBookmarks] = useState<Bookmark[]>();
+	const [bookmarks, setBookmarks] = useState<BookmarkType[]>([]);
 
 	useEffect(() => {
 		const fetchBookmarks = async () => {
@@ -32,7 +32,7 @@ export default function Home() {
 				return;
 			}
 
-			const dataJson = (await data.json()) as Bookmark[];
+			const dataJson = (await data.json()) as BookmarkType[];
 			setBookmarks(dataJson);
 		};
 
@@ -40,26 +40,18 @@ export default function Home() {
 	}, [bookmarkUrl]);
 
 	return (
-		<div>
-			<div className="grid grid-cols-1 grid-rows-2 justify-center place-items-center max-w-full">
-				<div className="flex flex-wrap col-start-1 justify-center">
-					<div className="pt-4 pr-5">{discordId && <Spotify id={discordId} alt={image} />}</div>
-					<Search engine={engine ?? GOOGLE} className="max-w-min" />
+		<div className="px-4 mx-auto mt-20 space-y-10 max-w-3xl">
+			<div className="flex justify-center items-center">
+				{discordId && <Spotify id={discordId} alt={image} />}
+				<div>
+					<Search engine={engine ?? GOOGLE} />
 				</div>
-				<div className="flex flex-wrap justify-center bookmark-container">
-					{bookmarks?.map(bookmark => (
-						<Link key={`bookmark-${bookmark.name}`} href={bookmark.url}>
-							<a className="pr-3 min-w-max" rel="noreferrer" target="_blank">
-								<div className="container flex max-w-max bookmark">
-									<img src={bookmark.image} alt="icon" className="bookmark-icon" />
-									<div className="grid grid-rows-3 pr-4 pl-2">
-										<div className="row-start-2">{bookmark.name}</div>
-									</div>
-								</div>
-							</a>
-						</Link>
-					))}
-				</div>
+			</div>
+
+			<div className="grid grid-cols-3 gap-3">
+				{bookmarks?.map(bookmark => (
+					<Bookmark key={bookmark.name} bookmark={bookmark} />
+				))}
 			</div>
 		</div>
 	);

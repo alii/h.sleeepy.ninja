@@ -1,63 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-@import "spotify.css";
 
 * {
-    font-family: "JetBrains Mono", monospace;
+	font-family: 'JetBrains Mono', monospace;
 }
 
-:root {
-    --main-color: #292838;
-    --lighter: #3c3b4d;
-    --bookmark: #453f57;
-    --bookmark-lighter: #625b77;
-    --text-color: #abacb0;
-    --text-color-40: rgba(171, 172, 176, 0.4);
-    --dark: #1c2121;
-    --medium-dark: rgba(29, 33, 33, 0.78);
-    --spotify-green: #1db954;
-    --spotify-shadow: rgba(28, 28, 28, 0.68);
+html {
+	height: 100%;
 }
 
-html, body {
-    background-color: var(--main-color);
-    color: var(--text-color);
-}
-
-.search-bar {
-    background-color: var(--lighter);
-    border-radius: 10px;
-    color: var(--text-color);
-    margin: 0.7em;
-    height: 40px;
-    min-width: 400px;
-    opacity: 70%;
-    max-width: 600px;
-    filter: drop-shadow(-4px 4px 3px var(--spotify-shadow));
-    transition: 0.3s ease-in-out;
-}
-
-.search-bar:focus {
-    opacity: 110%;
-    outline: none;
-}
-
-.bookmark {
-    background-color: var(--bookmark);
-    padding: 0.4em;
-    margin: 0.6em;
-    border-radius: 10px;
-    filter: drop-shadow(-4px 4px 3px var(--spotify-shadow));
-}
-
-.bookmark:hover {
-    background-color: var(--bookmark-lighter);
-}
-
-.bookmark-container {
-    max-width: 80%;
-}
-
-.bookmark-icon {
-    height: 60px;
-    color: var(--text-color);
+body {
+	background: #000000;
+	color: #cccccc;
 }

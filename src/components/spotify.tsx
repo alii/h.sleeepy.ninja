@@ -34,16 +34,20 @@ export function Spotify(props: {id: string; className?: string; alt?: string}) {
 		<div className={`my-2 max-w-max fit ${props.className ?? ''}`}>
 			<div className="container flex py-2 px-3 my-1 spotify">
 				<div className="col-start-2 col-end-2 pt-2.5 pr-2 pl-4 fit wrap">
-					<div className="spotify-image">
+					<div className="relative">
 						<Image
 							src={data.album_art_url}
 							height={100}
 							width={100}
 							alt="album image"
-							className="album-image"
+							className="rounded-md"
 						/>
-						<Link href={`https://open.spotify.com/track/${data.track_id}`}>
-							<a className="mr-3 text-lg spotify-logo" target="_blank" rel="noreferrer">
+						<Link passHref href={`https://open.spotify.com/track/${data.track_id}`}>
+							<a
+								className="absolute top-0 right-0 -mt-2 -mr-2 text-lg"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<svg
 									width="30"
 									height="30"
