@@ -1,37 +1,37 @@
 {
-  "name": "home",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@types/node-fetch": "^2.5.12",
-    "next": "11.1.0",
-    "nextkit": "^1.0.9",
-    "node-fetch": "^2.6.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "swr": "^1.0.0",
-    "tailwindcss": "^2.2.8",
-    "typescript": "^4.4.2",
-    "typescript-eslint": "^0.0.1-alpha.0",
-    "use-lanyard": "^0.0.6"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.19",
-    "autoprefixer": "^10.3.3",
-    "eslint-config-xo": "^0.38.0",
-    "eslint-config-xo-react": "^0.25.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-tailwindcss": "^1.14.3",
-    "postcss": "^8.3.6",
-    "prettier": "^2.3.2",
-    "typescript-eslint": "^0.0.1-alpha.0",
-    "xo": "^0.44.0"
-  },
-  "packageManager": "yarn@3.0.1"
+	"name": "home",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@types/node-fetch": "^2.5.12",
+		"next": "11.1.0",
+		"nextkit": "^1.0.9",
+		"node-fetch": "^2.6.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"swr": "^1.0.0",
+		"tailwindcss": "^2.2.8",
+		"typescript": "^4.4.2",
+		"typescript-eslint": "^0.0.1-alpha.0",
+		"use-lanyard": "^0.0.6"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.19",
+		"autoprefixer": "^10.3.3",
+		"eslint-config-xo": "^0.38.0",
+		"eslint-config-xo-react": "^0.25.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-tailwindcss": "^1.14.3",
+		"postcss": "^8.3.6",
+		"prettier": "^2.3.2",
+		"typescript-eslint": "^0.0.1-alpha.0",
+		"xo": "^0.44.0"
+	},
+	"packageManager": "yarn@3.0.1"
 }
