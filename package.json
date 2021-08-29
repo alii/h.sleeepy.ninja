@@ -32,5 +32,6 @@
     "prettier": "^2.3.2",
     "typescript-eslint": "^0.0.1-alpha.0",
     "xo": "^0.44.0"
-  }
+  },
+  "packageManager": "yarn@3.0.1"
 }
