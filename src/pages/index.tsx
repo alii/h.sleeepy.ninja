@@ -43,9 +43,7 @@ export default function Home(): JSX.Element {
 		<div>
 			<div className="grid grid-cols-1 grid-rows-2 justify-center place-items-center max-w-full">
 				<div className="flex flex-wrap col-start-1 justify-center">
-					<div className="pt-4 pr-5">
-						{discordId ? <Spotify id={discordId} alt={image} /> : null}
-					</div>
+					<div className="pt-4 pr-5">{discordId && <Spotify id={discordId} alt={image} />}</div>
 					<Search engine={engine ?? GOOGLE} className="max-w-min" />
 				</div>
 				<div className="flex flex-wrap justify-center bookmark-container">
