@@ -1,10 +1,10 @@
 import {AppProps} from 'next/app';
 import {SWRConfig} from 'swr';
 
-import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
 import '../styles/index.css';
 
-export default function App({Component, pageProps}: AppProps): JSX.Element {
+export default function App({Component, pageProps}: AppProps) {
 	return (
 		<SWRConfig
 			value={{

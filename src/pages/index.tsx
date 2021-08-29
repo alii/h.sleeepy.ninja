@@ -7,7 +7,7 @@ import {ENGINES, GOOGLE} from '../types/engine';
 import {Bookmark} from '../types/bookmarks';
 import Link from 'next/link';
 
-export default function Home(): JSX.Element {
+export default function Home() {
 	const router = useRouter();
 
 	const {
