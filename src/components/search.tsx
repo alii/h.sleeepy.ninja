@@ -1,7 +1,7 @@
 import {Engine} from '../types/engine';
 import {useRouter} from 'next/router';
 
-export function Search(props: {engine: Engine; className?: string}): JSX.Element {
+export function Search(props: {engine: Engine; className?: string}) {
 	const router = useRouter();
 	return (
 		<div className={`grid grid-rows-3 ${props.className ?? ''}`}>

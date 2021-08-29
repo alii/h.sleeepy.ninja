@@ -7,18 +7,27 @@ import {ENGINES, GOOGLE} from '../types/engine';
 import {Bookmark} from '../types/bookmarks';
 import Link from 'next/link';
 
-export default function Home(): JSX.Element {
+export default function Home() {
 	const router = useRouter();
-	const discordId = router.query.id as string;
-	const engineName = router.query.engine as string;
-	const bookmarkUrl = router.query.bmf as string;
-	const image = router.query.image as string;
+
+	const {
+		id: discordId,
+		engine: engineName,
+		bmf: bookmarkUrl,
+		image,
+	} = router.query as Record<string, string | undefined>;
+
 	const engine = ENGINES.find(engine => match(engine.name, engineName ?? 'google'));
 	const [bookmarks, setBookmarks] = useState<Bookmark[]>();
 
 	useEffect(() => {
 		const fetchBookmarks = async () => {
+			if (!bookmarkUrl) {
+				return;
+			}
+
 			const data = await fetch(bookmarkUrl);
+
 			if (data.status !== 200) {
 				return;
 			}
@@ -34,9 +43,7 @@ export default function Home(): JSX.Element {
 		<div>
 			<div className="grid grid-cols-1 grid-rows-2 justify-center place-items-center max-w-full">
 				<div className="flex flex-wrap col-start-1 justify-center">
-					<div className="pt-4 pr-5">
-						{discordId ? <Spotify id={discordId} alt={image} /> : null}
-					</div>
+					<div className="pt-4 pr-5">{discordId && <Spotify id={discordId} alt={image} />}</div>
 					<Search engine={engine ?? GOOGLE} className="max-w-min" />
 				</div>
 				<div className="flex flex-wrap justify-center bookmark-container">
@@ -58,6 +65,6 @@ export default function Home(): JSX.Element {
 	);
 }
 
-function match(a: string, b: string): boolean {
+function match(a: string, b: string) {
 	return a.toLowerCase() === b.toLowerCase();
 }
