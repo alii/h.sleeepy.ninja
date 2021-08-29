@@ -257,12 +257,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.12.5":
-  version: 7.12.5
-  resolution: "@babel/runtime@npm:7.12.5"
+"@babel/runtime@npm:7.15.3":
+  version: 7.15.3
+  resolution: "@babel/runtime@npm:7.15.3"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 64964a0fd172917fc5faac56bea5f0e6ec6200973e4ed6373e114f23f8cd6f113be31a6559fadfdd4f62071559e05d00a391760876a00345ea7813356c880209
+  checksum: 2f0b8d2d4e36035ab1d84af0ec26aafa098536870f27c8e07de0a0e398f7a394fdea68a88165535ffb52ded6a68912bdc3450bdf91f229eb132e1c89470789f5
   languageName: node
   linkType: hard
 
@@ -396,23 +396,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@next/env@npm:11.1.0"
-  checksum: 088275890d6ec74b193c79b81f11521c7201703e6a404ad8fd1979b99d5df1573456053e592693c4e667e4718fe02b60c48be28d657d18371c930ef8ee4ca5ad
+"@next/env@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/env@npm:11.1.1-canary.17"
+  checksum: 16b84336e784f60c5baabba7ae7f7e941db50230848db42df3f1daeb854b9d7d9798b8286ad6a0a9824501a67612fc55ccf2a44ccfb067883721f1840cb8c7ec
   languageName: node
   linkType: hard
 
-"@next/polyfill-module@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@next/polyfill-module@npm:11.1.0"
-  checksum: 45ce6453d717e74c424e438b8de32fe42795b165fd5e9d60f0bc0cf585c9fcd044b7db2efa90a930303064090bea2a4a10848f64d8301b0dc242e986ff922f55
+"@next/polyfill-module@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/polyfill-module@npm:11.1.1-canary.17"
+  checksum: 2706b84a0d1cc40615656027070bc94641dfad47c817aae349a738552f029d3e98e36c2e051fe91ca033e7c0cc0daeb258851c90cd56a7fb4f9b0ba83f91bd16
   languageName: node
   linkType: hard
 
-"@next/react-dev-overlay@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@next/react-dev-overlay@npm:11.1.0"
+"@next/react-dev-overlay@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/react-dev-overlay@npm:11.1.1-canary.17"
   dependencies:
     "@babel/code-frame": 7.12.11
     anser: 1.4.9
@@ -428,20 +428,48 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 58d8f3e1524354b1ecc01af2933ea6a527d5520062afe663d2b32ff50e1e71f3cd61725c513896a6fe9a82089ca8575742178b44ae9d9a14015a5b6543b6cea1
+  checksum: d52cfb261440da514615efb304edaa68279b80e678b652f632efbf5d5099ea2f6797d09f62d119d4f30e7dbb32244532f443b200054df8eea99027a7b4329d75
   languageName: node
   linkType: hard
 
-"@next/react-refresh-utils@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@next/react-refresh-utils@npm:11.1.0"
+"@next/react-refresh-utils@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/react-refresh-utils@npm:11.1.1-canary.17"
   peerDependencies:
     react-refresh: 0.8.3
     webpack: ^4 || ^5
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: d4b96574fa982ca7db87887cd3c581602d35c87137b59204d2ecaee68705a6145ad5752a398fc8b780d56257b92c904fd4b1324fe6f73cc90cc362e37aaf5024
+  checksum: 8fcf3fb3637b6c68a909cf6e9d5b6e83bd5cbb8b5aed511aa3087a35cdba639300091b51a8643d1fbb84f5e091bcc66feef8eb6a77a5f62c6f4d7ee87fec2bd7
+  languageName: node
+  linkType: hard
+
+"@next/swc-darwin-arm64@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/swc-darwin-arm64@npm:11.1.1-canary.17"
+  checksum: a052ff06c8363f9d1a17c95b85231103a5b3cf9988cbc253f1a1562327579f2e0728c2adce52646b98bd24f2c953b1ce03644c53cd267d557dcc2c89057caff9
+  languageName: node
+  linkType: hard
+
+"@next/swc-darwin-x64@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/swc-darwin-x64@npm:11.1.1-canary.17"
+  checksum: 500420fa4ebe1effeff8697881c866c60f04294be4c2bf52f22af3adaf00719610c2890deb7ca513fb63ce8eae0fc100411f10f6a0b330097edc8e2c062be482
+  languageName: node
+  linkType: hard
+
+"@next/swc-linux-x64-gnu@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/swc-linux-x64-gnu@npm:11.1.1-canary.17"
+  checksum: b51f5ce5a6db5270828f390acd5eabb1393e64812cf8b2e0936b16c248e461c0370d8da5cde2d0297e8b10b5bcdd843a2662d5c8a9a2894e907b13fc61454f4f
+  languageName: node
+  linkType: hard
+
+"@next/swc-win32-x64-msvc@npm:11.1.1-canary.17":
+  version: 11.1.1-canary.17
+  resolution: "@next/swc-win32-x64-msvc@npm:11.1.1-canary.17"
+  checksum: 43d376f09b87091a80d320d3318a6ccfa6bb4bb5c9ab73fd31dc6f573d47077edc2fe5faa8b148d73c49062e14936dcb3ea2fc8cfac0c92e3e8c0855e16184e4
   languageName: node
   linkType: hard
 
@@ -2394,13 +2422,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.24.0":
-  version: 7.24.0
-  resolution: "eslint-plugin-react@npm:7.24.0"
+"eslint-plugin-react@npm:^7.25.0":
+  version: 7.25.0
+  resolution: "eslint-plugin-react@npm:7.25.0"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
     doctrine: ^2.1.0
+    estraverse: ^5.2.0
     has: ^1.0.3
     jsx-ast-utils: ^2.4.1 || ^3.0.0
     minimatch: ^3.0.4
@@ -2412,7 +2441,7 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: bf844f98d93f3617fbd03df4be4f4c9e8e49ea035678762b73a28df730e9518d5ac636293f6326b41b4a0678f9dfa059ce559f6652c7a2d914d477ec3a389619
+  checksum: f4332c2b33e4cb7b3896da63ee8b786c45196524f7da8e06594abb4b2641f9b52d7a4ccf830e5ade73d67aae78ac9d8fb2d1bf33de3e522b4a20a75edb8806b9
   languageName: node
   linkType: hard
 
@@ -3179,10 +3208,10 @@ __metadata:
     autoprefixer: ^10.3.3
     eslint-config-xo: ^0.38.0
     eslint-config-xo-react: ^0.25.0
-    eslint-plugin-react: ^7.24.0
+    eslint-plugin-react: ^7.25.0
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-tailwindcss: ^1.14.3
-    next: 11.1.0
+    next: canary
     nextkit: ^1.0.9
     node-fetch: ^2.6.1
     postcss: ^8.3.6
@@ -4464,16 +4493,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:11.1.0":
-  version: 11.1.0
-  resolution: "next@npm:11.1.0"
+"next@npm:canary":
+  version: 11.1.1-canary.17
+  resolution: "next@npm:11.1.1-canary.17"
   dependencies:
-    "@babel/runtime": 7.12.5
+    "@babel/runtime": 7.15.3
     "@hapi/accept": 5.0.2
-    "@next/env": 11.1.0
-    "@next/polyfill-module": 11.1.0
-    "@next/react-dev-overlay": 11.1.0
-    "@next/react-refresh-utils": 11.1.0
+    "@next/env": 11.1.1-canary.17
+    "@next/polyfill-module": 11.1.1-canary.17
+    "@next/react-dev-overlay": 11.1.1-canary.17
+    "@next/react-refresh-utils": 11.1.1-canary.17
+    "@next/swc-darwin-arm64": 11.1.1-canary.17
+    "@next/swc-darwin-x64": 11.1.1-canary.17
+    "@next/swc-linux-x64-gnu": 11.1.1-canary.17
+    "@next/swc-win32-x64-msvc": 11.1.1-canary.17
     "@node-rs/helper": 1.2.1
     assert: 2.0.0
     ast-types: 0.13.2
@@ -4515,7 +4548,7 @@ __metadata:
     timers-browserify: 2.0.12
     tty-browserify: 0.0.1
     use-subscription: 1.5.1
-    util: 0.12.3
+    util: 0.12.4
     vm-browserify: 1.1.2
     watchpack: 2.1.1
   peerDependencies:
@@ -4524,6 +4557,15 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     sass: ^1.3.0
+  dependenciesMeta:
+    "@next/swc-darwin-arm64":
+      optional: true
+    "@next/swc-darwin-x64":
+      optional: true
+    "@next/swc-linux-x64-gnu":
+      optional: true
+    "@next/swc-win32-x64-msvc":
+      optional: true
   peerDependenciesMeta:
     fibers:
       optional: true
@@ -4533,7 +4575,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: b74dfd738b12917ba946b81678da330e9795c5ecf08761a984d8d5b780b983ce9671c093b59c70070ad9dbdc6ef1e55280d57599d27e1f1f9dc666111ad60e5e
+  checksum: 81e640f53f1f459adac2bd6abca7af2e67889efe4a72f07b6b4db184621839dd5c24cba53c1e1895affb79a9d48485b93e93238c1c224d9b3cf2a746b56e2b63
   languageName: node
   linkType: hard
 
@@ -6767,30 +6809,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"util@npm:0.12.3":
-  version: 0.12.3
-  resolution: "util@npm:0.12.3"
-  dependencies:
-    inherits: ^2.0.3
-    is-arguments: ^1.0.4
-    is-generator-function: ^1.0.7
-    is-typed-array: ^1.1.3
-    safe-buffer: ^5.1.2
-    which-typed-array: ^1.1.2
-  checksum: e64d4a901999017d3125ba20d66f3f97429240ed1f7cf60a705abba8a4901277b909250677f616e043cd49f7ce5e4f2f4df5aa3960e8fdf83941f828f3643e9a
-  languageName: node
-  linkType: hard
-
-"util@npm:^0.11.0":
-  version: 0.11.1
-  resolution: "util@npm:0.11.1"
-  dependencies:
-    inherits: 2.0.3
-  checksum: 80bee6a2edf5ab08dcb97bfe55ca62289b4e66f762ada201f2c5104cb5e46474c8b334f6504d055c0e6a8fda10999add9bcbd81ba765e7f37b17dc767331aa55
-  languageName: node
-  linkType: hard
-
-"util@npm:^0.12.0":
+"util@npm:0.12.4, util@npm:^0.12.0":
   version: 0.12.4
   resolution: "util@npm:0.12.4"
   dependencies:
@@ -6801,6 +6820,15 @@ resolve@^2.0.0-next.3:
     safe-buffer: ^5.1.2
     which-typed-array: ^1.1.2
   checksum: 8eac7a6e6b341c0f1b3eb73bbe5dfcae31a7e9699c8fc3266789f3e95f7637946a7700dcf1904dbd3749a58a36760ebf7acf4bb5b717f7468532a8a79f44eff0
+  languageName: node
+  linkType: hard
+
+"util@npm:^0.11.0":
+  version: 0.11.1
+  resolution: "util@npm:0.11.1"
+  dependencies:
+    inherits: 2.0.3
+  checksum: 80bee6a2edf5ab08dcb97bfe55ca62289b4e66f762ada201f2c5104cb5e46474c8b334f6504d055c0e6a8fda10999add9bcbd81ba765e7f37b17dc767331aa55
   languageName: node
   linkType: hard
 
