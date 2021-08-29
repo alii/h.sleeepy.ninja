@@ -9,16 +9,25 @@ import Link from 'next/link';
 
 export default function Home(): JSX.Element {
 	const router = useRouter();
-	const discordId = router.query.id as string;
-	const engineName = router.query.engine as string;
-	const bookmarkUrl = router.query.bmf as string;
-	const image = router.query.image as string;
+
+	const {
+		id: discordId,
+		engine: engineName,
+		bmf: bookmarkUrl,
+		image,
+	} = router.query as Record<string, string | undefined>;
+
 	const engine = ENGINES.find(engine => match(engine.name, engineName ?? 'google'));
 	const [bookmarks, setBookmarks] = useState<Bookmark[]>();
 
 	useEffect(() => {
 		const fetchBookmarks = async () => {
+			if (!bookmarkUrl) {
+				return;
+			}
+
 			const data = await fetch(bookmarkUrl);
+
 			if (data.status !== 200) {
 				return;
 			}
@@ -58,6 +67,6 @@ export default function Home(): JSX.Element {
 	);
 }
 
-function match(a: string, b: string): boolean {
+function match(a: string, b: string) {
 	return a.toLowerCase() === b.toLowerCase();
 }

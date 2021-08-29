@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import useSWR, {SWRResponse} from 'swr';
-import {SpotifyData} from '../types/lanyardSpotify';
+import useLanyard from 'use-lanyard';
 
 export function Spotify(props: {id: string; className?: string; alt?: string}) {
-	const {data} = useLanyard(props.id);
+	const {data: {spotify: data} = {}} = useLanyard(props.id);
 
 	if (!data) {
 		if (props.alt) {
@@ -66,8 +65,4 @@ export function Spotify(props: {id: string; className?: string; alt?: string}) {
 			</div>
 		</div>
 	);
-}
-
-function useLanyard(id: string): SWRResponse<SpotifyData, Error> {
-	return useSWR<SpotifyData, Error>(`/api/lanyard?id=${id}`);
 }
