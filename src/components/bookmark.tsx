@@ -7,7 +7,7 @@ export function Bookmark({bookmark}: {bookmark: BookmarkType}) {
 		<Link passHref href={bookmark.url}>
 			<a
 				rel="noreferrer"
-				className="px-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-md transition hover:scale-95"
+				className="px-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-md transition-all transform-gpu hover:scale-95"
 				target="_blank"
 			>
 				<div className="flex justify-center items-center max-w-max">
