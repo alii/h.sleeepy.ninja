@@ -1,8 +1,8 @@
-import '../styles/globals.css';
-import '../styles/index.css';
-
 import {AppProps} from 'next/app';
 import {SWRConfig} from 'swr';
+
+import '../styles/globals.css';
+import '../styles/index.css';
 
 export default function App({Component, pageProps}: AppProps): JSX.Element {
 	return (
