@@ -6,28 +6,28 @@ export function Spotify(props: {id: string; className?: string; alt?: string}) {
 	const {data: {spotify: data} = {}} = useLanyard(props.id);
 
 	if (!data) {
-		if (props.alt) {
-			return (
-				<div className={`my-2 max-w-max fit ${props.className ?? ''}`}>
-					<div className="container flex py-2 px-3 my-1 spotify">
-						<div className="col-start-2 col-end-2 pt-2.5 pr-2 pl-4 fit wrap">
-							<div className="spotify-image">
-								<img
-									src={props.alt}
-									height={100}
-									width={100}
-									alt="album image"
-									className="album-image"
-									crossOrigin="anonymous"
-								/>
-							</div>
+		if (!props.alt) {
+			return null;
+		}
+
+		return (
+			<div className={`my-2 max-w-max fit ${props.className ?? ''}`}>
+				<div className="container flex py-2 px-3 my-1 spotify">
+					<div className="col-start-2 col-end-2 pt-2.5 pr-2 pl-4 fit wrap">
+						<div className="spotify-image">
+							<img
+								src={props.alt}
+								height={100}
+								width={100}
+								alt="album image"
+								className="album-image"
+								crossOrigin="anonymous"
+							/>
 						</div>
 					</div>
 				</div>
-			);
-		}
-
-		return null;
+			</div>
+		);
 	}
 
 	return (
