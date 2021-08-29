@@ -17,8 +17,8 @@ export const GOOGLE: Engine = {
 };
 
 export const ALI: Engine = {
-	name: 'alisearch',
-	display: 'Ali Search',
+	name: 'ali',
+	display: 'alii/search',
 	url: 'https://search.balls.workers.dev/?q=',
 };
 
